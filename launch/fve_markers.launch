@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<launch>
+	<!-- <param name="wp1Frame" value="/wp1"/>
+	<param name="wp2Frame" value="/wp2"/>
+	<param name="wp3Frame" value="/wp3"/>
+	<param name="wp4Frame" value="/wp4"/>
+	<param name="wp1Ns" value="wp1"/>
+	<param name="wp2Ns" value="wp2"/>
+	<param name="wp3Ns" value="wp3"/>
+	<param name="wp4Ns" value="wp4"/> -->
+
+	<node pkg="tf2_ros" type="static_transform_publisher" name="wp1" args="589873.4942102089 4477461.717478201 0 0 0 0 utm wp1"></node>
+
+<!-- 	need a frame from gps point collected to utm
+	then tf2 to utm frame -->
+
+
+  	<node pkg="fve_markers" type="fve_markers_node" name="fve_markers_node"></node>
+
+</launch>
